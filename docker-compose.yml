@@ -3,10 +3,10 @@ services:
     build: .
     container_name: docuscan-app
     ports:
-      - "8000:8000"
+      - "8000:7860"
     environment:
       - HOST=0.0.0.0
-      - PORT=8000
+      - PORT=7860
       - MAX_FILE_SIZE_MB=100
       - CORS_ORIGINS=*
     restart: unless-stopped

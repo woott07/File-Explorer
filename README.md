@@ -1,3 +1,13 @@
+---
+title: DocuScan - Tabular Data Inspector
+emoji: 📊
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # DocuScan — Tabular Document Scanner & Data Inspector
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=flat&logo=FastAPI&logoColor=white)](https://fastapi.tiangolo.com)
