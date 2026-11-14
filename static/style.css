@@ -1,0 +1,83 @@
+/* Custom styling for DocuScan Data Inspector */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700&display=swap');
+
+:root {
+  --primary: #1E3A5F;
+  --primary-hover: #152c48;
+  --secondary: #2563EB;
+  --accent: #059669;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+.font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-mono-data {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Search Term Highlight */
+mark.search-highlight {
+  background-color: #FEF08A;
+  color: #854D0E;
+  padding: 0 3px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+/* Slide-in drawer animations */
+.drawer-backdrop {
+  transition: opacity 0.25s ease-in-out;
+}
+.drawer-content {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Table styling */
+.data-table-container {
+  max-height: calc(100vh - 380px);
+  min-height: 420px;
+}
+
+.table-row-hover:hover {
+  background-color: #F8FAFC;
+}
+
+.sticky-header th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #F8FAFC;
+}
+
+.sticky-first-col {
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  background-color: inherit;
+}
+.sticky-header .sticky-first-col {
+  z-index: 15;
+}
